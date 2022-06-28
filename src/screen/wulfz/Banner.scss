@@ -1,0 +1,161 @@
+.bannerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+
+  .topPresent {
+    color: #4d1e00;
+    font-size: 80px;
+    font-weight: bold;
+    padding: 20px;
+    padding-top: 160px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  .publicSalePost {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    a {
+      text-decoration: none;
+    }
+    p {
+      color: #4d1e00;
+      font-size: 36px;
+      text-shadow: 0 0 3px yellow;
+      padding: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 0;
+    }
+  }
+
+  .bannerPaperContainer {
+    width: 600px;
+    margin-top: 20px;
+
+    .bannerPaper {
+      padding-left: 11.6%;
+      padding-right: 9.2%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .photoBoard {
+        margin-top: 130px;
+        width: 60%;
+        position: relative;
+
+        .photoBoardImg {
+          width: 100%;
+        }
+
+        .photoImg {
+          position: absolute;
+          width: 91%;
+          left: 4.5%;
+          top: 4.5%;
+        }
+      }
+
+      .descriptionBoard {
+        margin-top: 30px;
+        width: 88%;
+
+        p {
+          margin: 5%;
+          text-align: center;
+          font-family: wolf-font;
+          font-size: 17px;
+          line-height: 28px;
+          font-weight: bold;
+          color: #522304;
+
+          span {
+            color: #0084ff;
+          }
+        }
+      }
+
+      .mintPackageContainer {
+        margin-top: 100px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        .mintPackage {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          gap: 40px;
+          position: absolute;
+          bottom: -24px;
+
+          .mintButton {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            width: 200px;
+            height: 60px;
+            font-size: 24px;
+            color: #15306c;
+            font-weight: bold;
+          }
+
+          .mintButton:hover {
+            color: white;
+            cursor: pointer;
+          }
+
+          .mintButton:active {
+            color: white;
+            text-shadow: 0 0 5px yellow;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .bannerContainer {
+    width: 100%;
+
+    .bannerPaperContainer {
+      margin-top: 20px;
+      padding-left: 6%;
+      padding-right: 6%;
+      width: 88%;
+
+      .bannerPaper {
+        padding-left: 8.2%;
+        padding-right: 8.2%;
+
+        .mintPackageContainer {
+          margin-top: 80px;
+
+          .mintPackage {
+            gap: 20px;
+
+            .mintButton {
+              width: 120px;
+              height: 48px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

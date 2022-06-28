@@ -1,0 +1,54 @@
+.termContainer {
+	background-color: #fff5cc;
+	color: #522304;
+	font-size: 20px;
+	padding: 10%;
+	padding-top: 180px;
+
+	p.subject {
+		color: #4d1e00;
+		font-size: 44px;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	p.headerTitle {
+		color: #4d1e00;
+		font-size: 22px;
+		font-style: italic;
+	}
+
+	span {
+		color: #0084ff;
+	}
+
+	p.title {
+		color: #4d1e00;
+		font-size: 26px;
+		font-weight: bold;
+		margin: 40px;
+		margin-left: 0;
+	}
+
+	span.subTitle {
+		color: #522304;
+		font-size: 24px;
+		font-style: italic;
+		margin: 7px;
+		margin-top: 20px;
+	}
+
+	div.navigateTerms {
+		color: blue;
+		p {
+			padding: 5px;
+			margin: 5px;
+			cursor: pointer;
+		}
+
+		p:hover {
+			cursor: pointer;
+			box-shadow: 1px 1px 9px #1e69ca;
+		}
+	}
+}

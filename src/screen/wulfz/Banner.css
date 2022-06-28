@@ -1,0 +1,10 @@
+.bannerContainer .bannerPaperContainer .bannerPaper {
+  background-image: url("../../new/banner/book.png");
+  background-size: 100% 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .bannerContainer .bannerPaperContainer .bannerPaper {
+    background-image: url("../../new/banner/book-mobile.png");
+  }
+}

@@ -1,0 +1,28 @@
+@font-face {
+	font-family: "wolf-font";
+	src: url("./new/fonts/PingFang-SC-Regular.ttf");
+}
+
+/* @font-face {
+	font-family: "wolf-font";
+	src: url("//db.onlinewebfonts.com/t/05e476e067ffef74ca5686f229c40a63.eot");
+	src: url("//db.onlinewebfonts.com/t/05e476e067ffef74ca5686f229c40a63.eot?#iefix")
+			format("embedded-opentype"),
+		url("//db.onlinewebfonts.com/t/05e476e067ffef74ca5686f229c40a63.woff2")
+			format("woff2"),
+		url("//db.onlinewebfonts.com/t/05e476e067ffef74ca5686f229c40a63.woff")
+			format("woff"),
+		url("//db.onlinewebfonts.com/t/05e476e067ffef74ca5686f229c40a63.ttf")
+			format("truetype"),
+		url("//db.onlinewebfonts.com/t/05e476e067ffef74ca5686f229c40a63.svg#PingFang SC")
+			format("svg");
+} */
+
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+		"Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+		"Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}

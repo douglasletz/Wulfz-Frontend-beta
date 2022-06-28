@@ -1,0 +1,152 @@
+.teamContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: #fffcea;
+
+	.teamHeaderContainer {
+		margin-top: 60px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 32px;
+
+		img {
+			width: 72px;
+		}
+
+		p.teamHeader {
+			margin: 0px;
+			font-family: wolf-font;
+			font-size: 46px;
+			font-weight: 900;
+			color: #4d1e00;
+		}
+	}
+
+	.teamBottomImg {
+		margin-top: 50px;
+		margin-bottom: 60px;
+		width: 70%;
+	}
+
+	.teamWrapper {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		row-gap: 60px;
+		column-gap: 30px;
+		margin-top: 50px;
+
+		.wrapper {
+			width: 352px;
+			height: 555px;
+			display: flex;
+			flex-direction: column;
+
+			.namejob {
+				padding-left: 38px;
+				padding-top: 26px;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+
+				.name {
+					margin: 0;
+					font-family: wolf-font;
+					font-size: 20px;
+					font-weight: bold;
+					color: brown;
+				}
+
+				.job {
+					margin: 0;
+					padding-left: 6px;
+					font-family: wolf-font;
+					font-size: 16px;
+					color: brown;
+				}
+			}
+
+			img {
+				width: 280px;
+				margin-left: 36px;
+				margin-top: 31px;
+			}
+
+			.quote {
+				// height: 224px;
+				display: flex;
+				align-items: center;
+			}
+
+			.arrow {
+				align-self: center;
+			}
+
+			.description,
+			.mobileDesc,
+			.mobileText {
+				color: #522304;
+				font-size: 14px;
+				font-weight: bold;
+				line-height: 26px;
+				font-family: wolf-font;
+				padding: 35px;
+				padding-top: 15px;
+			}
+
+			.mobileText {
+				display: none;
+			}
+		}
+
+		.bottomImgW {
+			display: none;
+		}
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.teamContainer {
+		.teamHeaderContainer {
+			gap: 12px;
+			img {
+				width: 60px;
+			}
+			p.teamHeader {
+				font-size: 28px;
+			}
+		}
+	}
+
+	.mobileDesc {
+		display: none !important;
+	}
+
+	.mobileText {
+		display: block !important;
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	.teamContainer .teamWrapper .wrapper img {
+		width: 79.5%;
+		margin-left: 36px;
+		margin-top: 31px;
+	}
+
+	.teamContainer .teamWrapper .wrapper .description {
+		padding: 8%;
+	}
+
+	.mobileDesc {
+		display: none !important;
+	}
+
+	.mobileText {
+		display: block !important;
+	}
+}

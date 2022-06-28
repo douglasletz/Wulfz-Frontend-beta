@@ -1,0 +1,207 @@
+.loadMapContainer {
+	padding-left: 12%;
+	padding-right: 12%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 50px;
+
+	.loadMapHeaderContainer {
+		margin-top: 60px;
+		margin-bottom: 40px;
+		display: flex;
+		align-items: center;
+		gap: 32px;
+
+		img {
+			width: 72px;
+		}
+
+		p.loadMapHeader {
+			margin: 0px;
+			font-family: wolf-font;
+			font-size: 46px;
+			font-weight: bold;
+			color: #4d1e00;
+		}
+	}
+
+	.roadMapContentContainer {
+		display: flex;
+		flex-direction: row;
+
+		.roadMapSidebar {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
+			gap: 20px;
+			width: 18%;
+			padding-left: 5%;
+			padding-top: 3%;
+			padding-bottom: 3%;
+
+			.roadMapButton {
+				width: 70%;
+				// height: 70%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				.phaseButton {
+					width: 100%;
+				}
+
+				.phaseButton:hover {
+					opacity: 0.7;
+					cursor: pointer;
+				}
+
+				.fadeButton {
+					opacity: 0.5;
+				}
+			}
+		}
+
+		.roadMapContent {
+			width: 77%;
+			padding-right: 6%;
+			padding-bottom: 50px;
+
+			.titleBoard {
+				margin-top: 70px;
+				position: relative;
+				width: 100%;
+
+				.titleBoardImg {
+					width: 100%;
+				}
+
+				.mobile {
+					display: none;
+				}
+
+				.sectionContainer {
+					position: absolute;
+					top: -4px;
+					width: 100%;
+					height: 100%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+
+					.section {
+						font-family: wolf-font;
+						font-size: 24px;
+						color: white;
+					}
+				}
+			}
+
+			.descriptionBoard {
+				margin-top: 10px;
+				padding-left: 7%;
+				padding-right: 7%;
+				padding-top: 40px;
+				padding-bottom: 20px;
+
+				.title {
+					margin-top: 0;
+					margin-bottom: 2%;
+					align-self: flex-start;
+					font-family: wolf-font;
+					font-weight: bold;
+					font-size: 24px;
+					color: #522304;
+				}
+
+				.description {
+					font-family: wolf-font;
+					font-size: 20px;
+					font-weight: bold;
+					color: #522304;
+				}
+
+				.imgContainer {
+					display: flex;
+					flex-direction: row;
+					justify-content: center;
+					gap: 7%;
+
+					.img {
+						width: 12%;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.loadMapContainer {
+		padding-left: 5%;
+		padding-right: 5%;
+
+		.loadMapHeaderContainer {
+			img {
+				width: 36px;
+			}
+
+			p.loadMapHeader {
+				font-size: 28px;
+			}
+		}
+
+		.roadMapContentContainer {
+			flex-direction: column;
+			padding: 3%;
+
+			.roadMapSidebar {
+				margin-top: 40px;
+				flex-direction: row;
+				justify-content: space-evenly;
+				width: 90%;
+				padding-left: 5%;
+				padding-right: 5%;
+				padding-top: 0;
+				padding-bottom: 0;
+
+				.roadMapButton {
+					width: 15%;
+				}
+			}
+
+			.roadMapContent {
+				width: 100%;
+				padding-right: 0;
+				// padding-left: 5%;
+				// padding-right: 5%;
+
+				.titleBoard {
+					margin-top: 10px;
+
+					.land {
+						display: none;
+					}
+
+					.mobile {
+						display: flex;
+					}
+
+					.sectionContainer {
+						top: 0;
+					}
+				}
+
+				.descriptionBoard {
+					.title {
+						font-size: 20px;
+					}
+
+					.description {
+						font-size: 18px;
+					}
+				}
+			}
+		}
+	}
+}

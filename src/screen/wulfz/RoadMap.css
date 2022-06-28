@@ -1,0 +1,11 @@
+.loadMapContainer .roadMapContentContainer {
+  background-image: url("../../new/roadmap/roadmapBoard.png");
+  background-size: 100% 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .loadMapContainer .roadMapContentContainer {
+    background-image: url("../../new/roadmap/roadmapBoard-mobile.png");
+    background-size: 100% 100%;
+  }
+}
